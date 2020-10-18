@@ -27,15 +27,16 @@ import ProjectVersions.openosrsVersion
 
 version = "0.0.1"
 
-project.extra["PluginName"] = "Trent Plugin 1" // This is the name that is used in the external plugin manager panel
+project.extra["PluginName"] = "Trent_Plugin_1" // This is the name that is used in the external plugin manager panel
 project.extra["PluginDescription"] = "Trents First Plugin" // This is the description that is used in the external plugin manager panel
 
 dependencies {
     annotationProcessor(Libraries.lombok)
     annotationProcessor(Libraries.pf4j)
 
-    compileOnly("com.openosrs:runelite-api:$openosrsVersion+")
-    compileOnly("com.openosrs:runelite-client:$openosrsVersion+")
+    //compileOnly("com.openosrs:runelite-api:$openosrsVersion+")
+    compileOnly("com.openosrs:runelite-api:3.4.5")
+    compileOnly("com.openosrs:runelite-client:3.4.5")
 
     compileOnly(Libraries.guice)
     compileOnly(Libraries.javax)
